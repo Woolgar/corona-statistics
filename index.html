@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Corona virus statstic page providing you with the current worldwide corona virus numbers and guidelines">
+    <title>Corona stats</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/555774fa94.js" crossorigin="anonymous"></script>
+    <link rel='icon' href='assets\images\corona-icon.ico' type='image/x-icon' >
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>corona | covid-19</h1>
+            <p id="lastupdate"></p>
+            <section class="info-boxes">
+                <div class="info-container">
+                    <div class="info-box">
+                        <i class="far fa-3x fa-hand-sparkles"></i>
+                        <h2>Wash hands</h2>
+                        <p>Often and thorough hand wash. Use hand sanitizer or disinfecting wipes if hand wash is not possible</p>
+                    </div>
+                    <div class="info-box">
+                        <i class="far fa-3x fa-handshake-alt-slash"></i>
+                        <h2>Limit physical contact</h2>
+                        <p>
+                           Avoid shaking hands, kisses on the cheek and hugs
+                        </p>
+                    </div>
+                    <div class="info-box">
+                        <i class="far fa-3x fa-head-side-cough-slash"></i>
+                        <h2>Show proper coughing etiquette</h2>
+                        <p>
+                            Don't cough or sneeze on others. Use handkerchiefs or the bend in your elbow.
+                        </p>
+                    </div>
+                    <div class="info-box">
+                        <i class="far fa-3x fa-home-lg-alt"></i>
+                        <h2>Stay at home if sick</h2>
+                        <p>People who show signs of severe symptoms should contact their doctor over the phone
+                            and avoid going outside as much as possible. Follow your local goverments advice.
+                        </p>
+                    </div>
+                    <div class="info-box">
+                        <i class="fal fa-3x fa-eye"></i>
+                        <h2>Be mindful of your surroundings</h2>
+                        <p>
+                            Show appropiate behaviour in areas with larger numbers of people, public transport, visting the elderly or sick.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="world">
+            <h2>World data</h1>
+             <ul id="world-stats"></ul>
+        </section>
+            <input type="text" id="search" aria-label="search" onkeyup="search()" placeholder="Search for country..">
+        <table id="table-country">
+            <caption>Country stats</h2>
+            <thead>
+                <tr>
+                    <th>Country <i class="far fa-sort-alt"></i></th>
+                    <th>Total Cases <i class="far fa-sort-alt"></i></th>
+                    <th class="warning">New cases <i class="far fa-sort-alt"></i></th>
+                    <th>Deaths <i class="far fa-sort-alt"></i></th>
+                    <th class="danger">New deaths <i class="far fa-sort-alt"></i></th>
+                    <th class="success">Recovered <i class="far fa-sort-alt"></i></th>
+                    <th>Active cases <i class="far fa-sort-alt"></i></th>
+                    <th>Critical condition <i class="far fa-sort-alt"></i></th>
+                    <th>Cases per 1M <i class="far fa-sort-alt"></i></th>
+                    <th>Deaths per 1M <i class="far fa-sort-alt"></i></th>
+                </tr>
+            </thead>
+            <tbody id="countries">
+                
+            </tbody>
+            </table>
+            <footer>
+                <p>data source:
+                    <a href="https://www.worldometers.info/coronavirus/"> https://www.worldometers.info/coronavirus/</a>
+                </p>
+            </footer>
+
+</main>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
