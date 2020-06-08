@@ -30,11 +30,11 @@ fetch(url)
         <tr>
         <td> <img src="${e.countryInfo.flag}" loading="lazy" alt="${e.country}"> ${e.country}</td>
         <td>${e.cases}</td>
+        <td>${e.active}</td>
         <td class="warning">+${e.todayCases}</td>
         <td>${e.deaths}</td>
         <td class="danger">+${e.todayDeaths}</td>
         <td class="success">${e.recovered}</td>
-        <td>${e.active}</td>
         <td>${e.critical}</td>
         <td>${e.casesPerOneMillion}</td>
         <td>${e.deathsPerOneMillion}</td>
@@ -44,7 +44,6 @@ fetch(url)
     })
     
     countries.innerHTML = output;
-    console.log(data)
 
     let updated = `${data[0].updated}`
     lastupdate.innerHTML = "Last updated " + timeConverter(updated);
