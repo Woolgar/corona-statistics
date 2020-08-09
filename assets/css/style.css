@@ -37,6 +37,10 @@ ul .world-stat-box {
           box-shadow: 1px 5px 14px -1px black;
 }
 
+ul .world-stat-box span {
+  padding-left: 0.5rem;
+}
+
 .info-container {
   display: -webkit-box;
   display: -ms-flexbox;
